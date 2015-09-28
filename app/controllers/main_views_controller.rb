@@ -16,6 +16,10 @@ class MainViewsController < ApplicationController
   end
 
   def index
+    url = "http://www.4sgm.com/is-bin/INTERSHOP.enfinity/WFS/4sgm-Storefront-Site/en_US/-/USD/ViewParametricSearch-RSS;pgid=8uKCiKaqQORSR00pmU_Mlavu0000K_PVledH?SearchCategoryUUID=t_DAwGQTQFQAAAELiFM0E4U1&rsstitle=Baby+Items"
+
+    @feed = Feedjira::Feed.fetch_and_parse url
+    # @photo = @entry.summary.sanitize
   end
 
   def login

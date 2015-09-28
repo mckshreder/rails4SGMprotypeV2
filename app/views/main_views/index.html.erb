@@ -1,3 +1,4 @@
+
 <section id="slider"><!--slider-->
 		<div class="container">
 			<div class="row">
@@ -61,6 +62,13 @@
 				</div>
 			</div>
 		</div>
+<% if @feed.entries.count > 0 %>
+    <% @feed.entries.each do |entry| %>
+    <div><%= entry.summary%></div>
+    <% end %>   
+<% else %>
+    <h2>No Posts Exist</h2>
+<% end %>
 	</section><!--/slider-->
 	
 	<section>

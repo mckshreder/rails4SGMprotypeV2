@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require 'rubygems'
+//= require 'simple-rss'
+//= require 'open-uri'
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
